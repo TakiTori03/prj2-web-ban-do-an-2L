@@ -3,7 +3,7 @@ const app = express();
 
 const cookieParser = require('cookie-parser')
 const bodyParser = require('body-parser')
-// const fileUpload = require('express-fileupload')
+const fileUpload = require('express-fileupload')
 // const dotenv = require('dotenv');
 const path = require('path')
 
@@ -16,7 +16,7 @@ if (process.env.NODE_ENV !== 'PRODUCTION') require('dotenv').config({ path: 'bac
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser())
-// app.use(fileUpload());
+app.use(fileUpload());
 
 
 // Import all routes
