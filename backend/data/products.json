@@ -1,102 +1,420 @@
-[
+[{
+  "_id": {
+    "$oid": "665d82a8b138e0f335b6851b"
+  },
+  "name": "Cơm thố",
+  "price": 2.5,
+  "description": "Cơm thố là một món ăn ngon miệng, đầy đủ dinh dưỡng và phù hợp với mọi lứa tuổi. Hãy thử một lần thưởng thức món ăn này để cảm nhận hương vị độc đáo và hấp dẫn của nó nhé!",
+  "ratings": 0,
+  "images": [
     {
-        "name" : "JBL Tour One M2",
-        "price" : "298",
-        "description" : "Wireless Over-Ear Noise Cancelling Headphones (Black), Medium",
-        "ratings" : 4,
-        "images" : [{
-            "public_id" : "products/ddx2fqf3bdratnexyf81s",
-            "url" : "https://asset.cloudinary.com/dsnfgt7rf/b38a01fe03f56a497f9b0bf6335ba717"
-        }],
-        "category" : "Headphones",
-        "seller" : "Son",
-        "stock" : 50,
-        "numOfReviews" : 0,
-        "reviews": []
-    },
-    {
-        "name": "Phin sữa đá",
-        "price": 1.19,
-        "description": "Hương vị cà phê Việt Nam đích thực! Từng hạt cà phê hảo hạng được chọn bằng tay, phối trộn độc đáo giữa hạt Robusta từ cao nguyên Việt Nam, thêm Arabica thơm lừng. Cà phê được pha từ Phin truyền thống, hoà cùng sữa đặc sánh và thêm vào chút đá tạo nên ly Phin Sữa Đá – Đậm Đà Chất Phin.",
-        "ratings": 4,
-        "images": [
-            {
-                "public_id": "products/cq4ssei7rg3lamnqlula",
-                "url": "https://res.cloudinary.com/dgfvlobva/image/upload/v1703003903/products/cq4ssei7rg3lamnqlula.jpg"
-            }
-        ],
-        "category": "Cà phê",
-        "seller": "Lê Đức Thái",
-        "stock": 4,
-        "numOfReviews": 0,
-        "reviews": []
-    },
-    {
-        "name": "Classic Phin Freeze",
-        "price": 2.26,
-        "description": "Thơm ngon đậm đà! Được kết hợp từ cà phê pha Phin truyền thống chỉ có tại Highlands Coffee, cùng với thạch cà phê và đá xay mát lạnh. Trên cùng là lớp kem tươi thơm béo và bột ca cao đậm đà. Món nước hoàn hảo để khởi đầu câu chuyện cùng bạn bè.",
-        "ratings": 0,
-        "images": [
-            {
-                "public_id": "products/cijngsfpxdher5ul5qgz",
-                "url": "https://res.cloudinary.com/dgfvlobva/image/upload/v1703005177/products/cijngsfpxdher5ul5qgz.jpg"
-            }
-        ],
-        "category": "Freeze",
-        "seller": "Lê Đức Thái",
-        "stock": 9,
-        "numOfReviews": 0,
-        "reviews": []
-    },
-    {
-        "name": "Trà Thạch Vải",
-        "price": 1.85,
-        "description": "Một sự kết hợp thú vị giữa trà đen, những quả vải thơm ngon và thạch giòn khó cưỡng, mang đến thức uống tuyệt hảo!",
-        "ratings": 0,
-        "images": [
-            {
-                "public_id": "products/b2xc0vl2paaifeygjv1y",
-                "url": "https://res.cloudinary.com/dgfvlobva/image/upload/v1703005457/products/b2xc0vl2paaifeygjv1y.jpg"
-            }
-        ],
-        "category": "Trà",
-        "seller": "Lê Đức Thái",
-        "stock": 7,
-        "numOfReviews": 0,
-        "reviews": []
-    },
-    {
-        "name": "Bánh Caramel Phô Mai",
-        "price": 1.44,
-        "description": "Ngon khó cưỡng! Bánh phô mai thơm béo được phủ bằng lớp caramel ngọt ngào.",
-        "ratings": 0,
-        "images": [
-            {
-                "public_id": "products/wujioiem8bek1wgjmb7v",
-                "url": "https://res.cloudinary.com/dgfvlobva/image/upload/v1703005918/products/wujioiem8bek1wgjmb7v.jpg"
-            }
-        ],
-        "category": "Khác",
-        "seller": "Lê Đức Thái",
-        "stock": 6,
-        "numOfReviews": 0,
-        "reviews": []
-    },
-    {
-        "name": "Bạc Xỉu Đá",
-        "price": 1.19,
-        "description": "Nếu Phin Sữa Đá dành cho các bạn đam mê vị đậm đà, thì Bạc Xỉu Đá là một sự lựa chọn nhẹ “đô\" cà phê nhưng vẫn thơm ngon, chất lừ không kém!",
-        "ratings": 0,
-        "images": [
-            {
-                "public_id": "products/snun0ov08w562eufjceh",
-                "url": "https://res.cloudinary.com/dgfvlobva/image/upload/v1703007069/products/snun0ov08w562eufjceh.jpg"
-            }
-        ],
-        "category": "Cà phê",
-        "seller": "Lê Đức Thái",
-        "stock": 20,
-        "numOfReviews": 0,
-        "reviews": []
+      "public_id": "products/cmtgqutir5kuqtfyx4mc",
+      "url": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1717404326/products/cmtgqutir5kuqtfyx4mc.jpg",
+      "_id": {
+        "$oid": "665d82a8b138e0f335b6851c"
+      }
     }
-]
+  ],
+  "category": "Food",
+  "seller": "Ngô Văn Linh",
+  "stock": 30,
+  "numOfReviews": 0,
+  "user": {
+    "$oid": "66419efa012bc572d2d02c24"
+  },
+  "reviews": [],
+  "createdAt": {
+    "$date": "2024-06-03T08:45:28.776Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665d848145a6ddc427601919"
+  },
+  "name": "Cơm gà xối mỡ",
+  "price": 2,
+  "description": "Cơm gà xôi mỡ là một món ăn dân dã nhưng không kém phần hấp dẫn, mang đậm hương vị quê hương Việt Nam. Hãy thử một lần thưởng thức món ăn này để cảm nhận hương vị thơm ngon và khó cưỡng của nó nhé!",
+  "ratings": 0,
+  "images": [
+    {
+      "public_id": "products/pe4qx7msgysmqj1gitjz",
+      "url": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1717404798/products/pe4qx7msgysmqj1gitjz.jpg",
+      "_id": {
+        "$oid": "665d848145a6ddc42760191a"
+      }
+    }
+  ],
+  "category": "Food",
+  "seller": "Ngô Văn Linh",
+  "stock": 20,
+  "numOfReviews": 0,
+  "user": {
+    "$oid": "66419efa012bc572d2d02c24"
+  },
+  "reviews": [],
+  "createdAt": {
+    "$date": "2024-06-03T08:53:21.130Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665d85e8c1a29dbab17b4d3d"
+  },
+  "name": "Trà sữa ToCoToCo",
+  "price": 2,
+  "description": "Tocotoco là thương hiệu trà sữa uy tín, chất lượng, được đông đảo giới trẻ yêu thích. Với hương vị trà sữa thơm ngon, nguyên liệu tự nhiên và phong cách phục vụ chuyên nghiệp, Tocotoco chắc chắn sẽ mang đến cho bạn những trải nghiệm tuyệt vời.",
+  "ratings": 0,
+  "images": [
+    {
+      "public_id": "products/ce2tzakrds7k9gvy8922",
+      "url": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1717405158/products/ce2tzakrds7k9gvy8922.jpg",
+      "_id": {
+        "$oid": "665d85e8c1a29dbab17b4d3e"
+      }
+    }
+  ],
+  "category": "Drink",
+  "seller": "Ngô Văn Linh",
+  "stock": 20,
+  "numOfReviews": 0,
+  "user": {
+    "$oid": "66419efa012bc572d2d02c24"
+  },
+  "reviews": [],
+  "createdAt": {
+    "$date": "2024-06-03T08:59:20.735Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665d8724c1a29dbab17b4d4b"
+  },
+  "name": "Trà chanh bụi phố",
+  "price": 1.5,
+  "description": "Trà chanh là thức uống đơn giản, dễ làm nhưng mang lại nhiều lợi ích cho sức khỏe. Hãy thường xuyên thưởng thức trà chanh để giải nhiệt và tăng cường sức khỏe cho cơ thể nhé!",
+  "ratings": 0,
+  "images": [
+    {
+      "public_id": "products/ke7yfxhu03bpfkqanwck",
+      "url": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1717405474/products/ke7yfxhu03bpfkqanwck.jpg",
+      "_id": {
+        "$oid": "665d8724c1a29dbab17b4d4c"
+      }
+    }
+  ],
+  "category": "Drink",
+  "seller": "Ngô Văn Linh",
+  "stock": 40,
+  "numOfReviews": 0,
+  "user": {
+    "$oid": "66419efa012bc572d2d02c24"
+  },
+  "reviews": [],
+  "createdAt": {
+    "$date": "2024-06-03T09:04:36.487Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665d87c9c1a29dbab17b4d54"
+  },
+  "name": "Cơm chay",
+  "price": 3,
+  "description": "Cơm chay là món ăn ngon miệng, bổ dưỡng và phù hợp với mọi lứa tuổi. Hãy thường xuyên thưởng thức cơm chay để có một sức khỏe tốt và một tâm hồn thanh tịnh!",
+  "ratings": 0,
+  "images": [
+    {
+      "public_id": "products/easrxrnucijpw63hsdea",
+      "url": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1717405639/products/easrxrnucijpw63hsdea.jpg",
+      "_id": {
+        "$oid": "665d87c9c1a29dbab17b4d55"
+      }
+    }
+  ],
+  "category": "Vege",
+  "seller": "Ngô Văn Linh",
+  "stock": 50,
+  "numOfReviews": 0,
+  "user": {
+    "$oid": "66419efa012bc572d2d02c24"
+  },
+  "reviews": [],
+  "createdAt": {
+    "$date": "2024-06-03T09:07:21.423Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665d8845c1a29dbab17b4d5e"
+  },
+  "name": "Bông lan trứng muối",
+  "price": 3,
+  "description": "Bánh bông lan trứng muối là món bánh thơm ngon, béo ngậy, phù hợp để làm quà tặng hoặc thưởng thức trong những dịp đặc biệt. Hãy thử làm món bánh này để cảm nhận hương vị tuyệt vời của nó nhé!\r\n\r\n",
+  "ratings": 0,
+  "images": [
+    {
+      "public_id": "products/q9hrdpsz0jsz2g8y6xwz",
+      "url": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1717405763/products/q9hrdpsz0jsz2g8y6xwz.jpg",
+      "_id": {
+        "$oid": "665d8845c1a29dbab17b4d5f"
+      }
+    }
+  ],
+  "category": "Cakes",
+  "seller": "Ngô Văn Linh",
+  "stock": 8,
+  "numOfReviews": 0,
+  "user": {
+    "$oid": "66419efa012bc572d2d02c24"
+  },
+  "reviews": [],
+  "createdAt": {
+    "$date": "2024-06-03T09:09:25.591Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665d8963c1a29dbab17b4d69"
+  },
+  "name": "Chè ngọc thạch",
+  "price": 2,
+  "description": "Chè ngọc thạch là món chè thanh mát, giải nhiệt được nhiều người yêu thích, đặc biệt là trong những ngày hè nóng bức. Món chè này có vị ngọt thanh của nước đường, vị béo ngậy của nước cốt dừa, vị giòn dai của thạch và vị chua thanh của trái cây, tạo nên hương vị hài hòa và hấp dẫn.",
+  "ratings": 0,
+  "images": [
+    {
+      "public_id": "products/jdkk3behrmfgh2mmisyd",
+      "url": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1717406049/products/jdkk3behrmfgh2mmisyd.jpg",
+      "_id": {
+        "$oid": "665d8963c1a29dbab17b4d6a"
+      }
+    }
+  ],
+  "category": "Dessert",
+  "seller": "Ngô Văn Linh",
+  "stock": 25,
+  "numOfReviews": 0,
+  "user": {
+    "$oid": "66419efa012bc572d2d02c24"
+  },
+  "reviews": [],
+  "createdAt": {
+    "$date": "2024-06-03T09:14:11.601Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665d89e3c1a29dbab17b4d75"
+  },
+  "name": "Thịt nướng",
+  "price": 2,
+  "description": "\r\nThịt nướng: Món ăn hấp dẫn, đa dạng và phù hợp cho mọi dịp\r\nThịt nướng là món ăn vô cùng phổ biến và được yêu thích bởi hương vị thơm ngon, đậm đà, cùng cách chế biến đa dạng, phù hợp với mọi dịp tụ tập, liên hoan. Thịt nướng có thể chế biến từ nhiều loại thịt khác nhau như thịt bò, thịt heo, thịt gà, hải sản,... và được tẩm ướp với nhiều loại gia vị khác nhau để tạo nên hương vị độc đáo riêng.",
+  "ratings": 0,
+  "images": [
+    {
+      "public_id": "products/jlfjwibkccdyy5kabcwx",
+      "url": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1717406176/products/jlfjwibkccdyy5kabcwx.jpg",
+      "_id": {
+        "$oid": "665d89e3c1a29dbab17b4d76"
+      }
+    }
+  ],
+  "category": "Homemade",
+  "seller": "Ngô Văn Linh",
+  "stock": 58,
+  "numOfReviews": 0,
+  "user": {
+    "$oid": "66419efa012bc572d2d02c24"
+  },
+  "reviews": [],
+  "createdAt": {
+    "$date": "2024-06-03T09:16:19.351Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665d8a51c1a29dbab17b4d82"
+  },
+  "name": "Phở rán lòng xào",
+  "price": 5,
+  "description": "Phở rán lòng xào là món ăn sáng độc đáo và hấp dẫn, được yêu thích bởi hương vị thơm ngon, đậm đà và giá cả bình dân. Món ăn này thường được bán ở các quán ăn ven đường hoặc các khu chợ, thu hút nhiều thực khách bởi sự kết hợp mới lạ giữa phở rán giòn rụm và lòng xào béo ngậy.",
+  "ratings": 0,
+  "images": [
+    {
+      "public_id": "products/h7teonc5557caq5q0hik",
+      "url": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1717406286/products/h7teonc5557caq5q0hik.jpg",
+      "_id": {
+        "$oid": "665d8a51c1a29dbab17b4d83"
+      }
+    }
+  ],
+  "category": "StreetFood",
+  "seller": "Ngô Văn Linh",
+  "stock": 50,
+  "numOfReviews": 0,
+  "user": {
+    "$oid": "66419efa012bc572d2d02c24"
+  },
+  "reviews": [],
+  "createdAt": {
+    "$date": "2024-06-03T09:18:09.210Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665d8b02c1a29dbab17b4dab"
+  },
+  "name": "Gà rán KFC",
+  "price": 3,
+  "description": "KFC - Kentucky Fried Chicken - là thương hiệu gà rán nổi tiếng toàn cầu với lịch sử hơn 80 năm. Gà rán KFC được yêu thích bởi lớp vỏ giòn rụm, thịt gà mềm mọng, đậm đà hương vị cùng nhiều loại sốt chấm đa dạng.",
+  "ratings": 0,
+  "images": [
+    {
+      "public_id": "products/ee8zgopjcgvbo739aq7k",
+      "url": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1717406463/products/ee8zgopjcgvbo739aq7k.jpg",
+      "_id": {
+        "$oid": "665d8b02c1a29dbab17b4dac"
+      }
+    }
+  ],
+  "category": "Chicken",
+  "seller": "Ngô Văn Linh",
+  "stock": 98,
+  "numOfReviews": 0,
+  "user": {
+    "$oid": "66419efa012bc572d2d02c24"
+  },
+  "reviews": [],
+  "createdAt": {
+    "$date": "2024-06-03T09:21:06.084Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665d8c243fcfddf8474b66ec"
+  },
+  "name": "Lẩu",
+  "price": 10,
+  "description": "Lẩu là món ăn truyền thống phổ biến và được yêu thích bởi hương vị thơm ngon, đậm đà, cùng cách chế biến đa dạng, phù hợp cho mọi dịp tụ tập, liên hoan. Lẩu có thể chế biến từ nhiều nguyên liệu khác nhau như thịt bò, thịt heo, hải sản, rau củ quả,... và được tẩm ướp với nhiều loại gia vị khác nhau để tạo nên hương vị độc đáo riêng.\r\n\r\n",
+  "ratings": 0,
+  "images": [
+    {
+      "public_id": "products/rdbq15zgikblp8vnlxwk",
+      "url": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1717406754/products/rdbq15zgikblp8vnlxwk.jpg",
+      "_id": {
+        "$oid": "665d8c243fcfddf8474b66ed"
+      }
+    }
+  ],
+  "category": "Hotpot",
+  "seller": "Ngô Văn Linh",
+  "stock": 3,
+  "numOfReviews": 0,
+  "user": {
+    "$oid": "66419efa012bc572d2d02c24"
+  },
+  "reviews": [],
+  "createdAt": {
+    "$date": "2024-06-03T09:25:56.864Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665d8cb73fcfddf8474b66fc"
+  },
+  "name": "ShuShi Nhật Bản",
+  "price": 5,
+  "description": "Sushi là món ăn truyền thống nổi tiếng nhất của Nhật Bản, được biết đến với sự tinh tế, thanh tao và hương vị thơm ngon. Sushi không chỉ là một món ăn đơn thuần mà còn là một nghệ thuật ẩm thực, thể hiện sự tỉ mỉ và khéo léo của người đầu bếp.",
+  "ratings": 0,
+  "images": [
+    {
+      "public_id": "products/u6ccss98kx4bf25jl1u6",
+      "url": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1717406901/products/u6ccss98kx4bf25jl1u6.jpg",
+      "_id": {
+        "$oid": "665d8cb73fcfddf8474b66fd"
+      }
+    }
+  ],
+  "category": "Shushi",
+  "seller": "Ngô Văn Linh",
+  "stock": 39,
+  "numOfReviews": 0,
+  "user": {
+    "$oid": "66419efa012bc572d2d02c24"
+  },
+  "reviews": [],
+  "createdAt": {
+    "$date": "2024-06-03T09:28:23.841Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665d8d233fcfddf8474b670d"
+  },
+  "name": "Bún trộn Nam Bộ",
+  "price": 13,
+  "description": "Bún Trộn Nam Bộ, hay còn gọi là Bún Bò Huế Trộn, là món ăn đặc sản của miền Nam Việt Nam, nổi tiếng với hương vị thanh mát, đậm đà và cách trình bày đẹp mắt. Món ăn này thường được dùng vào những ngày hè nóng bức để giải nhiệt và cung cấp năng lượng cho cơ thể.\r\n\r\n",
+  "ratings": 0,
+  "images": [
+    {
+      "public_id": "products/jpcrxb6tulp4x1hbwwjg",
+      "url": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1717407009/products/jpcrxb6tulp4x1hbwwjg.jpg",
+      "_id": {
+        "$oid": "665d8d233fcfddf8474b670e"
+      }
+    }
+  ],
+  "category": "Noodles",
+  "seller": "Ngô Văn Linh",
+  "stock": 49,
+  "numOfReviews": 0,
+  "user": {
+    "$oid": "66419efa012bc572d2d02c24"
+  },
+  "reviews": [],
+  "createdAt": {
+    "$date": "2024-06-03T09:30:11.784Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665d8da73fcfddf8474b671f"
+  },
+  "name": "Cơm trứng phủ",
+  "price": 7,
+  "description": "Món ăn độc lạ thú vị, đáng để thưởng thức!",
+  "ratings": 0,
+  "images": [
+    {
+      "public_id": "products/ippnbac9sjyswoteweoq",
+      "url": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1717407141/products/ippnbac9sjyswoteweoq.jpg",
+      "_id": {
+        "$oid": "665d8da73fcfddf8474b6720"
+      }
+    }
+  ],
+  "category": "RiceBox",
+  "seller": "Ngô Văn Linh",
+  "stock": 30,
+  "numOfReviews": 0,
+  "user": {
+    "$oid": "66419efa012bc572d2d02c24"
+  },
+  "reviews": [],
+  "createdAt": {
+    "$date": "2024-06-03T09:32:23.943Z"
+  },
+  "__v": 0
+}]

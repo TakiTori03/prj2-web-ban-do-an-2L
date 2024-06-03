@@ -22,18 +22,20 @@ const UpdateProduct = ({ match, history }) => {
     const [imagesPreview, setImagesPreview] = useState([])
 
     const categories = [
-        'Electronics',
-        'Cameras',
-        'Laptops',
-        'Accessories',
-        'Headphones',
         'Food',
-        "Books",
-        'Clothes/Shoes',
-        'Beauty/Health',
-        'Sports',
-        'Outdoor',
-        'Home'
+        'Drink',
+        'Vege',
+        'Cakes',
+        'Dessert',
+        'Homemade',
+        'StreetFood',
+        'Pizza/Burger',
+        'Chicken',
+        'Hotpot',
+        'Shushi',
+        'Noodles',
+        'RiceBox'
+
     ]
 
     const alert = useAlert();

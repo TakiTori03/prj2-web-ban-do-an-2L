@@ -83,7 +83,7 @@ exports.getSingleProduct = catchAsyncErrors(async (req, res, next) => {
 
     if (!product) {
         return res.status(401).json({ success: false, message: 'Product not found' });
-        
+
     }
 
 
@@ -101,7 +101,7 @@ exports.updateProduct = catchAsyncErrors(async (req, res, next) => {
 
     if (!product) {
         return res.status(401).json({ success: false, message: 'Product not found' });
-        
+
     }
 
     let images = []
@@ -154,7 +154,7 @@ exports.deleteProduct = catchAsyncErrors(async (req, res, next) => {
 
     if (!product) {
         return res.status(401).json({ success: false, message: 'Product not found' });
-        
+
     }
 
     // Deleting images associated with the product

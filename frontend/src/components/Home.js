@@ -25,18 +25,19 @@ const Home = ({ match }) => {
     const [showAllProducts, setShowAllProducts] = useState(true);
 
     const categories = [
-        'Electronics',
-        'Cameras',
-        'Laptops',
-        'Accessories',
-        'Headphones',
         'Food',
-        "Books",
-        'Clothes/Shoes',
-        'Beauty/Health',
-        'Sports',
-        'Outdoor',
-        'Home'
+        'Drink',
+        'Vege',
+        'Cakes',
+        'Dessert',
+        'Homemade',
+        'StreetFood',
+        'Pizza/Burger',
+        'Chicken',
+        'Hotpot',
+        'Shushi',
+        'Noodles',
+        'RiceBox'
     ]
 
     const alert = useAlert();
@@ -65,11 +66,11 @@ const Home = ({ match }) => {
         count = filteredProductsCount
     }
     const handleShowAllProducts = () => {
-        setCategory(''); 
+        setCategory('');
         setShowAllProducts(true);
     };
 
-  
+
 
     return (
         <Fragment>
@@ -77,35 +78,35 @@ const Home = ({ match }) => {
                 <Fragment>
                     <MetaData title={'Buy Best Products Online'} />
 
-                    <h1 
+                    <h1
                         id="products_heading"
                         onClick={handleShowAllProducts}
-                        >
+                    >
                         All product
                     </h1>
-                    
-                   
+
+
 
                     <ul className="pl-1">
                         {categories?.map(category => (
                             <li
-                                 style={{
+                                style={{
                                     cursor: 'pointer',
-                                    padding:'10px',
-                                    color:'#f1f1f1',
-                                    display:'inline-block',
+                                    padding: '10px',
+                                    color: '#f1f1f1',
+                                    display: 'inline-block',
                                     width: '120px',
                                     height: '40px',
-                                    margin:'2px',
+                                    margin: '2px',
                                     listStyleType: 'none'
-                                        }}
-                                            key={category}
-                                                onClick={() => setCategory(category)}
-                                         >
-                                         {category}
+                                }}
+                                key={category}
+                                onClick={() => setCategory(category)}
+                            >
+                                {category}
                             </li>
-                             ))}
-                     </ul>
+                        ))}
+                    </ul>
 
                     <section id="products" className="container mt-5">
                         <div className="row">
@@ -131,7 +132,7 @@ const Home = ({ match }) => {
                                                 onChange={price => setPrice(price)}
                                             />
 
-                                           
+
 
                                             <div className="mt-5">
                                                 <h4 className="mb-3">
@@ -173,10 +174,10 @@ const Home = ({ match }) => {
                                     </div>
                                 </Fragment>
                             ) : (
-                                    products?.map(product => (
-                                        <Product key={product._id} product={product} col={3} />
-                                    ))
-                                )}
+                                products?.map(product => (
+                                    <Product key={product._id} product={product} col={3} />
+                                ))
+                            )}
 
                         </div>
                     </section>
