@@ -19,7 +19,7 @@ const Range = createSliderWithTooltip(Slider.Range)
 const Home = ({ match }) => {
 
     const [currentPage, setCurrentPage] = useState(1)
-    const [price, setPrice] = useState([1, 1000])
+    const [price, setPrice] = useState([1, 100])
     const [category, setCategory] = useState('')
     const [rating, setRating] = useState(0)
     const [showAllProducts, setShowAllProducts] = useState(true);
@@ -76,13 +76,13 @@ const Home = ({ match }) => {
         <Fragment>
             {loading ? <Loader /> : (
                 <Fragment>
-                    <MetaData title={'Buy Best Products Online'} />
+                    <MetaData title={'Buy your favorite food'} />
 
                     <h1
                         id="products_heading"
                         onClick={handleShowAllProducts}
                     >
-                        All product
+                        All dishes
                     </h1>
 
 
@@ -118,11 +118,11 @@ const Home = ({ match }) => {
                                             <Range
                                                 marks={{
                                                     1: `$1`,
-                                                    10000: `$1000`
+                                                    10000: `$100`
                                                 }}
                                                 min={1}
-                                                max={1000}
-                                                defaultValue={[1, 1000]}
+                                                max={100}
+                                                defaultValue={[1, 100]}
                                                 tipFormatter={value => `$${value}`}
                                                 tipProps={{
                                                     placement: "top",

@@ -117,6 +117,7 @@ const ProductDetails = ({ match }) => {
         dispatch(newReview(formData));
     }
 
+
     return (
         <Fragment>
             {loading ? <Loader /> : (

@@ -9,6 +9,8 @@ import { useAlert } from 'react-alert'
 import { useDispatch, useSelector } from 'react-redux'
 import { myOrders, clearErrors } from '../../actions/orderActions'
 
+import moment from 'moment';
+
 const ListOrders = () => {
 
     const alert = useAlert();
@@ -28,6 +30,11 @@ const ListOrders = () => {
     const setOrders = () => {
         const data = {
             columns: [
+                {
+                    label: 'Order Time',
+                    field: 'time',
+                    sort: 'asc'
+                },
                 {
                     label: 'Order ID',
                     field: 'id',
@@ -59,6 +66,7 @@ const ListOrders = () => {
 
         orders.forEach(order => {
             data.rows.push({
+                time: moment(order.paidAt).format('YYYY-MM-DD'),
                 id: order._id,
                 numOfItems: order.orderItems.length,
                 amount: `$${order.totalPrice}`,

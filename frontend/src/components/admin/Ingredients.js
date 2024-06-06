@@ -11,13 +11,13 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getAdminProducts, deleteProduct, clearErrors } from '../../actions/productActions'
 import { DELETE_PRODUCT_RESET } from '../../constants/productConstants'
 
-const ProductsList = ({ history }) => {
+const IngredientList = ({ history }) => {
 
     const alert = useAlert();
     const dispatch = useDispatch();
 
-    const { loading, error, products } = useSelector(state => state.products);
-    const { error: deleteError, isDeleted } = useSelector(state => state.product)
+    const { loading, error, products } = useSelector(state => state.ingredient);
+    const { error: deleteError, isDeleted } = useSelector(state => state.ingredient)
 
     useEffect(() => {
         dispatch(getAdminProducts());
@@ -105,7 +105,7 @@ const ProductsList = ({ history }) => {
 
                 <div className="col-12 col-md-10">
                     <Fragment>
-                        <h1 className="my-5">All Dishes</h1>
+                        <h1 className="my-5">All Products</h1>
 
                         {loading ? <Loader /> : (
                             <MDBDataTable
@@ -125,4 +125,4 @@ const ProductsList = ({ history }) => {
     )
 }
 
-export default ProductsList
+export default IngredientList

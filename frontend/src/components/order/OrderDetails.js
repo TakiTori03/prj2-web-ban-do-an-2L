@@ -14,7 +14,7 @@ const OrderDetails = ({ match }) => {
     const dispatch = useDispatch();
 
     const { loading, error, order = {} } = useSelector(state => state.orderDetails)
-    const { shippingInfo, orderItems, paymentInfo, user, totalPrice, orderStatus } = order
+    const { shippingInfo, orderItems, paymentInfo, user, totalPrice, orderStatus, paidAt } = order
 
     useEffect(() => {
         dispatch(getOrderDetails(match.params.id));
@@ -29,7 +29,9 @@ const OrderDetails = ({ match }) => {
 
     const isPaid = paymentInfo && paymentInfo.status === 'succeeded' ? true : false
 
+
     return (
+
         <Fragment>
             <MetaData title={'Order Details'} />
 
@@ -49,8 +51,7 @@ const OrderDetails = ({ match }) => {
                             <hr />
 
                             <h4 className="my-4">Payment</h4>
-                            <p className={isPaid ? "greenColor" : "redColor"}><b>{isPaid ? "PAID" : "NOT PAID"}</b></p>
-
+                            <p className={isPaid ? "greenColor" : "redColor"}><b>{isPaid ? "PAID AT " + paidAt : "NOT PAID"}</b></p>
 
                             <h4 className="my-4">Order Status:</h4>
                             <p className={order.orderStatus && String(order.orderStatus).includes('Delivered') ? "greenColor" : "redColor"} ><b>{orderStatus}</b></p>
