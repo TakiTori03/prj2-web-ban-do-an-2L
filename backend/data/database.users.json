@@ -1,0 +1,119 @@
+[{
+  "_id": {
+    "$oid": "66419efa012bc572d2d02c24"
+  },
+  "name": "admin",
+  "email": "linhnv5413@gmail.com",
+  "password": "$2a$10$C4p/cni6lCF2mdkr16CG4OP1N7cKVO3RsIUIkDqaFwat4Rv5Az5Gq",
+  "avatar": {
+    "public_id": "avatars/mgd1pimmtkshei6v7ufk",
+    "url": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1717428659/avatars/mgd1pimmtkshei6v7ufk.jpg"
+  },
+  "role": "admin",
+  "createdAt": {
+    "$date": "2024-05-13T05:02:50.253Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6641ec3790587acc4c5b816d"
+  },
+  "name": "Ngô Văn Linh",
+  "email": "linhnv@yahoo.com",
+  "password": "$2b$10$9LRA5hUVhJdkfw49W0jx9uXwJgaKDOhm9.QjYQT2dK0D9Lbu8x6mG",
+  "avatar": {
+    "public_id": "avatars/t2dk34mftun1vxpb0q35",
+    "url": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1715596340/avatars/t2dk34mftun1vxpb0q35.png"
+  },
+  "role": "admin",
+  "createdAt": {
+    "$date": "2024-05-13T10:32:23.024Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6644d2781742fabced5d3c64"
+  },
+  "name": "linhnv",
+  "email": "shopbandoan2linh@gmail.com",
+  "password": "$2b$10$Dg4jjpKQZbELOhVz.rOgz.gDnhDYyduzcLLxiop1T4XNHymn4gvoy",
+  "avatar": {
+    "public_id": "avatars/lcrnlama3vvo7j9m5awb",
+    "url": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1715786357/avatars/lcrnlama3vvo7j9m5awb.png"
+  },
+  "role": "user",
+  "createdAt": {
+    "$date": "2024-05-15T15:19:20.586Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665855e30f34b52ce377d0e5"
+  },
+  "name": "linh",
+  "email": "linh@gmail.com",
+  "password": "$2a$10$37O1mdXFeFzBZ8hgVHD1G.wVPDh6XnQj6RaHskBXHE5dxNU/FzDXq",
+  "avatar": {
+    "public_id": "avatars/j404ephazzf4l3vypb4t",
+    "url": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1717065186/avatars/j404ephazzf4l3vypb4t.png"
+  },
+  "role": "user",
+  "createdAt": {
+    "$date": "2024-05-30T10:33:07.536Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66585e023af6c5e3670da4dc"
+  },
+  "name": "137418",
+  "email": "linh1@gmail.com",
+  "password": "$2a$10$c7f1xX03s4Y7c6f0vKcm/uMNnWEtb509ILlKFfQmKLy3KYO2pm1fK",
+  "avatar": {
+    "public_id": "avatars/kyltmda1dpsoxbgugkqc",
+    "url": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1717067265/avatars/kyltmda1dpsoxbgugkqc.png"
+  },
+  "role": "user",
+  "createdAt": {
+    "$date": "2024-05-30T11:07:46.435Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6661850eb2bad5a42899c367"
+  },
+  "name": "user1",
+  "email": "user1@gmail.com",
+  "password": "$2a$10$APWI3T4dZaGq.oMdRnjWiucFK4QHVW4Us8tv6Z964694j2Exx63Om",
+  "avatar": {
+    "public_id": "avatars/j0f3nmehqcxmx44hv0sj",
+    "url": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1717667085/avatars/j0f3nmehqcxmx44hv0sj.png"
+  },
+  "role": "user",
+  "createdAt": {
+    "$date": "2024-06-06T09:44:46.187Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66672318f10114b2059e0bb7"
+  },
+  "name": "linh3",
+  "email": "linhnv543@gmail.com",
+  "password": "$2a$10$7uNP.Xkb4DzfY0hp3E8nGuYjAeAjB/wlVIxqTazVYmqeOIlzz/dJu",
+  "avatar": {
+    "public_id": "avatars/mgd1pimmtkshei6v7ufk",
+    "url": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1717428659/avatars/mgd1pimmtkshei6v7ufk.jpg"
+  },
+  "role": "user",
+  "createdAt": {
+    "$date": "2024-06-10T16:00:24.574Z"
+  },
+  "__v": 0
+}]
