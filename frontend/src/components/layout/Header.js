@@ -27,7 +27,7 @@ const Header = () => {
                 <div className="col-12 col-md-3">
                     <div className="navbar-brand">
                         <Link to="/">
-                            <img src="/images/logo.png" alt="logo" />
+                            <img src="/images/logo.jpg" alt="logo" />
                         </Link>
                     </div>
                 </div>
