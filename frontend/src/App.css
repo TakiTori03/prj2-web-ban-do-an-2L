@@ -644,3 +644,47 @@ ul.CTAs a {
   text-align: left; /* Căn trái nội dung */
   display: inline-block;
 }
+
+.form-group {
+  margin-bottom: 1.5rem;
+  /* Điều chỉnh khoảng cách giữa các form-group */
+  width: 100%;
+}
+
+.form-control {
+  width: 100%; /* Đảm bảo rằng input sẽ chiếm toàn bộ phần width có sẵn */
+  padding: 0.75rem 1rem; /* Điều chỉnh padding của input để phù hợp với thiết kế */
+  font-size: 1rem; /* Cỡ chữ của input */
+  line-height: 1.5; /* Điều chỉnh độ cao dòng của input */
+  border-radius: 0.25rem; /* Điều chỉnh bo góc của input nếu cần */
+}
+
+.input-group {
+  position: relative;
+  /*Để định vị các phần tử bên trong input-group*/
+  z-index: 1;
+  float: right;
+}
+
+.input-group-text {
+  background-color: transparent; /* Đảm bảo rằng background của input-group-text là trong suốt */
+  border: none; /* Loại bỏ đường viền của input-group-text */
+  border-radius: 0 0.25rem 0.25rem 0; /* Điều chỉnh bo góc bên phải của input-group-text */
+}
+
+.input-group-append {
+  position: absolute; /* Để đặt input-group-append tương đối với input-group */
+  right: 0; /* Đặt input-group-append ở bên phải của input-group */
+  top: 0; /* Đặt input-group-append ở đầu của input-group */
+  bottom: 0; /* Chiếm đủ chiều cao của input-group */
+}
+
+.show-password {
+  padding: 0.375rem 0.75rem; /* Điều chỉnh padding của show-password để phù hợp với thiết kế */
+}
+
+.password-input {
+  display: flex; /* Enable flexbox layout */
+  align-items: center; /* Align elements vertically */
+  position: relative;
+}
