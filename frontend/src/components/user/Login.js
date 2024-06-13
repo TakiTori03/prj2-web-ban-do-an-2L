@@ -79,9 +79,9 @@ const Login = ({ history, location }) => {
                     />
 
                     <span
-                      className="input-group-text show-password"
+                      className="input-group-text-password show-password"
                       onClick={togglePasswordVisibility}
-                      style={{ cursor: "pointer", zIndex: "1" }}
+                      style={{ cursor: "pointer" }}
                     >
                       {showPassword ? (
                         <i className="fa fa-eye-slash"></i>

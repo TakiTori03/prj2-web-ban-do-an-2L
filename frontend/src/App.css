@@ -648,7 +648,6 @@ ul.CTAs a {
 .form-group {
   margin-bottom: 1.5rem;
   /* Điều chỉnh khoảng cách giữa các form-group */
-  width: 100%;
 }
 
 .form-control {
@@ -659,24 +658,10 @@ ul.CTAs a {
   border-radius: 0.25rem; /* Điều chỉnh bo góc của input nếu cần */
 }
 
-.input-group {
-  position: relative;
-  /*Để định vị các phần tử bên trong input-group*/
-  z-index: 1;
-  float: right;
-}
-
-.input-group-text {
+.input-group-text-password {
   background-color: transparent; /* Đảm bảo rằng background của input-group-text là trong suốt */
   border: none; /* Loại bỏ đường viền của input-group-text */
   border-radius: 0 0.25rem 0.25rem 0; /* Điều chỉnh bo góc bên phải của input-group-text */
-}
-
-.input-group-append {
-  position: absolute; /* Để đặt input-group-append tương đối với input-group */
-  right: 0; /* Đặt input-group-append ở bên phải của input-group */
-  top: 0; /* Đặt input-group-append ở đầu của input-group */
-  bottom: 0; /* Chiếm đủ chiều cao của input-group */
 }
 
 .show-password {
