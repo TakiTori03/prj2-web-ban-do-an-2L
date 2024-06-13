@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: 'Amazon Ember';
+  font-family: "Amazon Ember";
   width: 100%;
   height: 100%;
   margin: 0px;
@@ -92,7 +92,6 @@ nav {
 
 .card-text {
   font-size: 1.4rem;
-
 }
 
 #view_btn {
@@ -118,13 +117,11 @@ nav {
 
 /* Footer */
 footer {
-  
-    margin-top: 8rem;
-    color: grey;
-    bottom: 0;
-    width: 100%;
-    font-size: 20px;
-  
+  margin-top: 8rem;
+  color: grey;
+  bottom: 0;
+  width: 100%;
+  font-size: 20px;
 }
 
 /* Ratings */
@@ -137,7 +134,7 @@ footer {
 }
 
 .rating-outer::before {
-  content: '\f006 \f006 \f006 \f006 \f006';
+  content: "\f006 \f006 \f006 \f006 \f006";
 }
 
 .rating-inner {
@@ -150,7 +147,7 @@ footer {
 }
 
 .rating-inner::before {
-  content: '\f005 \f005 \f005 \f005 \f005';
+  content: "\f005 \f005 \f005 \f005 \f005";
   color: #f8ce0b;
 }
 
@@ -207,7 +204,7 @@ footer {
   padding-left: 0;
 }
 .loader:after {
-  content: ' ';
+  content: " ";
   display: block;
   width: 64px;
   height: 64px;
@@ -538,11 +535,11 @@ footer {
 }
 
 #sidebar ul li.active > a,
-a[aria-expanded='true'] {
+a[aria-expanded="true"] {
   color: #fff;
   background: #232f3e;
 }
-a[data-toggle='collapse'] {
+a[data-toggle="collapse"] {
   position: relative;
 }
 .dropdown-toggle::after {
@@ -620,9 +617,30 @@ ul.CTAs a {
   font-size: 0.8rem;
   color: grey;
 }
-.pl-1{
+.pl-1 {
   display: flex;
-  background: #1F568B;
+  background: #1f568b;
   list-style-type: none;
   text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contact-info .d-flex {
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.contact-info strong {
+  min-width: 70px; /* Đảm bảo chiều rộng đủ để căn chỉnh nhãn */
+  text-align: right; /* Căn phải nhãn */
+}
+
+.contact-info span {
+  text-align: left; /* Căn trái nội dung */
+  display: inline-block;
 }
