@@ -530,6 +530,11 @@ footer {
   background: #fff;
 }
 
+#sidebar ul li a:active {
+  color: #232f3e;
+  background: #fff;
+}
+
 #sidebar ul li a i {
   margin-right: 0.3rem;
 }
@@ -648,14 +653,6 @@ ul.CTAs a {
 .form-group {
   margin-bottom: 1.5rem;
   /* Điều chỉnh khoảng cách giữa các form-group */
-}
-
-.form-control {
-  width: 100%; /* Đảm bảo rằng input sẽ chiếm toàn bộ phần width có sẵn */
-  padding: 0.75rem 1rem; /* Điều chỉnh padding của input để phù hợp với thiết kế */
-  font-size: 1rem; /* Cỡ chữ của input */
-  line-height: 1.5; /* Điều chỉnh độ cao dòng của input */
-  border-radius: 0.25rem; /* Điều chỉnh bo góc của input nếu cần */
 }
 
 .input-group-text-password {
