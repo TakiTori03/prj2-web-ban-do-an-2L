@@ -1,0 +1,339 @@
+[{
+  "_id": {
+    "$oid": "6667361111f695595d10d29e"
+  },
+  "shippingInfo": {
+    "address": "Bắc Giang",
+    "city": "Bắc Giang",
+    "phoneNo": "123456789",
+    "postalCode": "124235",
+    "country": "Vietnam"
+  },
+  "user": {
+    "$oid": "666734292c9e2e0228081dca"
+  },
+  "orderItems": [
+    {
+      "name": "Cơm gà xối mỡ",
+      "quantity": 10,
+      "image": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1717404798/products/pe4qx7msgysmqj1gitjz.jpg",
+      "price": 2,
+      "product": {
+        "$oid": "665d848145a6ddc427601919"
+      },
+      "_id": {
+        "$oid": "6667361111f695595d10d29f"
+      }
+    }
+  ],
+  "paymentInfo": {
+    "id": "pi_3PQBuG2N0gNGyCEx0ueQNTjR",
+    "status": "succeeded"
+  },
+  "paidAt": {
+    "$date": "2024-06-10T17:21:21.762Z"
+  },
+  "itemsPrice": 20,
+  "taxPrice": 1,
+  "shippingPrice": 25,
+  "totalPrice": 46,
+  "orderStatus": "Delivered",
+  "createdAt": {
+    "$date": "2024-06-10T17:21:21.782Z"
+  },
+  "__v": 0,
+  "deliveredAt": {
+    "$date": "2024-06-10T17:23:14.051Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6667f077b60fe5c2898d26fa"
+  },
+  "shippingInfo": {
+    "address": "Bắc Giang",
+    "city": "Bắc Giang",
+    "phoneNo": "123456789",
+    "postalCode": "124235",
+    "country": "Vietnam"
+  },
+  "user": {
+    "$oid": "6644d2781742fabced5d3c64"
+  },
+  "orderItems": [
+    {
+      "name": "Trà chanh bụi phố",
+      "quantity": 10,
+      "image": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1717405474/products/ke7yfxhu03bpfkqanwck.jpg",
+      "price": 1.5,
+      "product": {
+        "$oid": "665d8724c1a29dbab17b4d4b"
+      },
+      "_id": {
+        "$oid": "6667f077b60fe5c2898d26fb"
+      }
+    }
+  ],
+  "paymentInfo": {
+    "id": "pi_3PQOJqP0XIOOoj1F0gByq76e",
+    "status": "succeeded"
+  },
+  "paidAt": {
+    "$date": "2024-06-11T06:36:39.505Z"
+  },
+  "itemsPrice": 15,
+  "taxPrice": 0.75,
+  "shippingPrice": 25,
+  "totalPrice": 40.75,
+  "orderStatus": "Delivered",
+  "createdAt": {
+    "$date": "2024-06-11T06:36:39.518Z"
+  },
+  "__v": 0,
+  "deliveredAt": {
+    "$date": "2024-06-11T06:43:31.168Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "666ab81b8fe2f4f3d08d7be1"
+  },
+  "shippingInfo": {
+    "address": "Bắc Giang",
+    "city": "Bắc Giang",
+    "phoneNo": "123456789",
+    "postalCode": "124235",
+    "country": "Vietnam"
+  },
+  "user": {
+    "$oid": "6644d2781742fabced5d3c64"
+  },
+  "orderItems": [
+    {
+      "name": "Trà sữa ToCoToCo",
+      "quantity": 1,
+      "image": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1717405158/products/ce2tzakrds7k9gvy8922.jpg",
+      "price": 2,
+      "product": {
+        "$oid": "665d85e8c1a29dbab17b4d3d"
+      },
+      "_id": {
+        "$oid": "666ab81b8fe2f4f3d08d7be2"
+      }
+    }
+  ],
+  "paymentInfo": {
+    "id": "pi_3PR9iIP0XIOOoj1F0Hk1L3mS",
+    "status": "succeeded"
+  },
+  "paidAt": {
+    "$date": "2024-06-13T09:12:59.126Z"
+  },
+  "itemsPrice": 2,
+  "taxPrice": 0.1,
+  "shippingPrice": 25,
+  "totalPrice": 27.1,
+  "orderStatus": "Delivered",
+  "createdAt": {
+    "$date": "2024-06-13T09:12:59.142Z"
+  },
+  "__v": 0,
+  "deliveredAt": {
+    "$date": "2024-06-14T09:38:44.801Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "666d2b982dd572c7b765ad1f"
+  },
+  "shippingInfo": {
+    "address": "Bắc Giang",
+    "city": "Bắc Giang",
+    "phoneNo": "123456789",
+    "postalCode": "124235",
+    "country": "Vietnam"
+  },
+  "user": {
+    "$oid": "6667f0f8b60fe5c2898d271b"
+  },
+  "orderItems": [
+    {
+      "name": "Trà chanh bụi phố",
+      "quantity": 1,
+      "image": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1717405474/products/ke7yfxhu03bpfkqanwck.jpg",
+      "price": 1.5,
+      "product": {
+        "$oid": "665d8724c1a29dbab17b4d4b"
+      },
+      "_id": {
+        "$oid": "666d2b982dd572c7b765ad20"
+      }
+    }
+  ],
+  "paymentInfo": {
+    "id": "pi_3PRpVDP0XIOOoj1F0oFA0JDV",
+    "status": "succeeded"
+  },
+  "paidAt": {
+    "$date": "2024-06-15T05:50:16.873Z"
+  },
+  "itemsPrice": 1.5,
+  "taxPrice": 0.08,
+  "shippingPrice": 5,
+  "totalPrice": 6.58,
+  "orderStatus": "Shipped",
+  "createdAt": {
+    "$date": "2024-06-15T05:50:16.880Z"
+  },
+  "__v": 0,
+  "deliveredAt": {
+    "$date": "2024-06-15T08:14:33.698Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "666d3b0d4861be9d1ec5c58f"
+  },
+  "shippingInfo": {
+    "address": "Bắc Giang",
+    "city": "Bắc Giang",
+    "phoneNo": "123456789",
+    "postalCode": "124235",
+    "country": "Vietnam"
+  },
+  "user": {
+    "$oid": "6667f0f8b60fe5c2898d271b"
+  },
+  "orderItems": [
+    {
+      "name": "Bông lan trứng muối",
+      "quantity": 5,
+      "image": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1717405763/products/q9hrdpsz0jsz2g8y6xwz.jpg",
+      "price": 3,
+      "product": {
+        "$oid": "665d8845c1a29dbab17b4d5e"
+      },
+      "_id": {
+        "$oid": "666d3b0d4861be9d1ec5c590"
+      }
+    }
+  ],
+  "paymentInfo": {
+    "id": "pi_3PRqX1P0XIOOoj1F0FiBNzBf",
+    "status": "succeeded"
+  },
+  "paidAt": {
+    "$date": "2024-06-15T06:56:13.191Z"
+  },
+  "itemsPrice": 15,
+  "taxPrice": 0.75,
+  "shippingPrice": 0,
+  "totalPrice": 15.75,
+  "orderStatus": "Processing",
+  "createdAt": {
+    "$date": "2024-06-15T06:56:13.199Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d3b444861be9d1ec5c60e"
+  },
+  "shippingInfo": {
+    "address": "Bắc Giang",
+    "city": "Bắc Giang",
+    "phoneNo": "123456789",
+    "postalCode": "124235",
+    "country": "Vietnam"
+  },
+  "user": {
+    "$oid": "6667f0f8b60fe5c2898d271b"
+  },
+  "orderItems": [
+    {
+      "name": "Bông lan trứng muối",
+      "quantity": 1,
+      "image": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1717405763/products/q9hrdpsz0jsz2g8y6xwz.jpg",
+      "price": 3,
+      "product": {
+        "$oid": "665d8845c1a29dbab17b4d5e"
+      },
+      "_id": {
+        "$oid": "666d3b444861be9d1ec5c60f"
+      }
+    }
+  ],
+  "paymentInfo": {
+    "id": "pi_3PRqXvP0XIOOoj1F1yFPWhHq",
+    "status": "succeeded"
+  },
+  "paidAt": {
+    "$date": "2024-06-15T06:57:08.822Z"
+  },
+  "itemsPrice": 3,
+  "taxPrice": 0.15,
+  "shippingPrice": 5,
+  "totalPrice": 8.15,
+  "orderStatus": "Processing",
+  "createdAt": {
+    "$date": "2024-06-15T06:57:08.824Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d4928dba191dfbe3d7b15"
+  },
+  "shippingInfo": {
+    "address": "Bắc Giang",
+    "city": "Bắc Giang",
+    "phoneNo": "123456789",
+    "postalCode": "124235",
+    "country": "Vietnam"
+  },
+  "user": {
+    "$oid": "6667f0f8b60fe5c2898d271b"
+  },
+  "orderItems": [
+    {
+      "name": "Bông lan trứng muối",
+      "quantity": 1,
+      "image": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1717405763/products/q9hrdpsz0jsz2g8y6xwz.jpg",
+      "price": 3,
+      "product": {
+        "$oid": "665d8845c1a29dbab17b4d5e"
+      },
+      "_id": {
+        "$oid": "666d4928dba191dfbe3d7b16"
+      }
+    },
+    {
+      "name": "Thịt nướng",
+      "quantity": 1,
+      "image": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1717406176/products/jlfjwibkccdyy5kabcwx.jpg",
+      "price": 2,
+      "product": {
+        "$oid": "665d89e3c1a29dbab17b4d75"
+      },
+      "_id": {
+        "$oid": "666d4928dba191dfbe3d7b17"
+      }
+    }
+  ],
+  "paymentInfo": {
+    "id": "pi_3PRrTGP0XIOOoj1F0KsbDoGR",
+    "status": "succeeded"
+  },
+  "paidAt": {
+    "$date": "2024-06-15T07:56:24.071Z"
+  },
+  "itemsPrice": 5,
+  "taxPrice": 0.25,
+  "shippingPrice": 5,
+  "totalPrice": 10.25,
+  "orderStatus": "Processing",
+  "createdAt": {
+    "$date": "2024-06-15T07:56:24.079Z"
+  },
+  "__v": 0
+}]

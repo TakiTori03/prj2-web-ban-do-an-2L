@@ -116,4 +116,89 @@
     "$date": "2024-06-10T16:00:24.574Z"
   },
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666734292c9e2e0228081dca"
+  },
+  "name": "admin1234",
+  "email": "admin1234@gmail.com",
+  "password": "$2a$10$.Ymwb.Fks/4jSpXVA3ncWuFnruICcGIJolCOTltsfSvuuCaVeb7DK",
+  "avatar": {
+    "public_id": "avatars/pfmf7zwyavlvbblfoq5v",
+    "url": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1718039592/avatars/pfmf7zwyavlvbblfoq5v.png"
+  },
+  "role": "admin",
+  "createdAt": {
+    "$date": "2024-06-10T17:13:13.260Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6667f0f8b60fe5c2898d271b"
+  },
+  "name": "tothailinh",
+  "email": "tothailinhytbg2003@gmail.com",
+  "password": "$2a$10$MG7aF4tadfZOGRAhwhzUcOY1ROSDTfoWRNIthtschmNSdWaCuPOeG",
+  "avatar": {
+    "public_id": "avatars/qc9rrv9ka2au0jxzjy0z",
+    "url": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1718087927/avatars/qc9rrv9ka2au0jxzjy0z.png"
+  },
+  "role": "admin",
+  "createdAt": {
+    "$date": "2024-06-11T06:38:48.625Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d805ab12f45ee81ba80f3"
+  },
+  "name": "tothailinh1234",
+  "email": "tothailinh1234@gmail.com",
+  "password": "$2a$10$iLK5DXDpXWq05WbhyD6t/OVlyqpJoCSabr2LqizTZpmgsCLqo8Cu2",
+  "avatar": {
+    "public_id": "avatars/mxccgc9mnxrb8izzcuoq",
+    "url": "https://res.cloudinary.com/dgjrkjkch/image/upload/v1718452315/avatars/mxccgc9mnxrb8izzcuoq.png"
+  },
+  "role": "user",
+  "createdAt": {
+    "$date": "2024-06-15T11:51:54.596Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666d837eb12f45ee81ba8168"
+  },
+  "name": "user",
+  "email": "user@gmail.com",
+  "password": "$2a$10$0HQF/xDj1jJfG3beIFeN2uXhZ65xN/qTgW1sRIArW.2eLUPA1Aw5i",
+  "avatar": {
+    "public_id": "avatars/default_avatar",
+    "url": "https://res.cloudinary.com/dqehjln9n/image/upload/v1718451998/avatar-mac-dinh_onlffq.png"
+  },
+  "role": "user",
+  "createdAt": {
+    "$date": "2024-06-15T12:05:18.900Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666db246b897e76b953f7913"
+  },
+  "name": "user",
+  "email": "testRegister@gmail.com",
+  "password": "$2a$10$GrIRz8XYUKqypwYtkqpbI.YZ3YHSOsZVOyHQO4wdJaIXs0yxwFZsG",
+  "avatar": {
+    "public_id": "avatars/default_avatar",
+    "url": "https://res.cloudinary.com/dqehjln9n/image/upload/v1718451998/avatar-mac-dinh_onlffq.png"
+  },
+  "role": "user",
+  "createdAt": {
+    "$date": "2024-06-15T15:24:54.175Z"
+  },
+  "__v": 0
 }]
