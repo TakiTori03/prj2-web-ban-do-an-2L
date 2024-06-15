@@ -43,7 +43,19 @@ const OrdersList = ({ history }) => {
 
   const xlsx = require("xlsx");
   const exportToExcel = () => {
-    const processedData = orders.map((order) => ({}));
+    const processedData = orders.map((order) => ({
+      OrderId: order._id,
+      user: order.user,
+      numberOfOrderItem: order.orderItems.length,
+      itemsPrice: order.itemsPrice,
+      shippingPrice: order.shippingPrice,
+      taxPrice: order.taxPrice,
+      totalPrice: order.totalPrice,
+      paymentStatus: order.paymentInfo.status,
+      paidAt: order.paidAt,
+      createdAt: order.createdAt,
+      deliveredAt: order.deliveredAt,
+    }));
     // Tạo một workbook mới
     const workbook = xlsx.utils.book_new();
 
