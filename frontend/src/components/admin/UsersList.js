@@ -1,4 +1,4 @@
-import React, { Fragment, useCallback, useEffect } from "react";
+import React, { Fragment, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { MDBDataTable } from "mdbreact";
 
@@ -39,13 +39,12 @@ const UsersList = ({ history }) => {
     dispatch(deleteUser(id));
   };
 
-  const exportToExcel = useCallback(() => {
+  const exportToExcel = () => {
     const processedData = users.map((item) => ({
-      ...item,
-      avatar_public_id: item.avatar.public_id,
-      avatar_url: item.avatar.url,
-      // Bỏ trường avatar
-      avatar: undefined,
+      id: item._id,
+      name: item.name,
+      email: item.email,
+      role: item.role,
     }));
     // Tạo một workbook mới
     const workbook = xlsx.utils.book_new();
@@ -58,8 +57,8 @@ const UsersList = ({ history }) => {
 
     // Xuất workbook ra file Excel
     xlsx.writeFile(workbook, "users.xlsx");
-    alert.success("Lưu file thành công");
-  }, [users, alert]);
+    alert.success("Excel file saved successfully");
+  };
 
   const setUsers = () => {
     const data = {
@@ -131,8 +130,20 @@ const UsersList = ({ history }) => {
 
         <div className="col-12 col-md-10">
           <Fragment>
-            <h1 className="my-5">All Users</h1>
-            <button onClick={exportToExcel}>Export Exel</button>
+            <h1 className="my-5">
+              All Users
+              <button
+                style={{
+                  display: "inline-block",
+                  marginLeft: "10px",
+                  padding: "5px 10px",
+                  fontSize: "0.8rem",
+                }}
+                onClick={exportToExcel}
+              >
+                Export Exel
+              </button>
+            </h1>
 
             {loading ? (
               <Loader />
