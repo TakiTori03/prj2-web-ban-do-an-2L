@@ -206,12 +206,29 @@ exports.createProductReview = catchAsyncErrors(async (req, res, next) => {
 
 // Get Product Reviews   =>   /api/v1/reviews
 exports.getProductReviews = catchAsyncErrors(async (req, res, next) => {
-  const { id } = req.query;
-  const product = await Product.findById(id);
+  const { id, name } = req.query;
 
+  if (!id && !name) {
+    res.status(200).json({
+      success: true,
+      reviews: null,
+    });
+  }
+
+  const conditions = [];
+  if (id) {
+    conditions.push({ _id: id });
+  }
+  if (name) {
+    conditions.push({ name: { $regex: name, $options: "i" } });
+  }
+
+  const query = { $or: conditions };
+
+  const product = await Product.find(query);
   res.status(200).json({
     success: true,
-    reviews: product.reviews,
+    reviews: product[0].reviews,
   });
 });
 

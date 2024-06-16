@@ -195,11 +195,11 @@ export const getAdminProducts = () => async (dispatch) => {
 };
 
 // Get product reviews
-export const getProductReviews = (id) => async (dispatch) => {
+export const getProductReviews = (id, name) => async (dispatch) => {
   try {
     dispatch({ type: GET_REVIEWS_REQUEST });
 
-    const { data } = await axios.get(`/api/v1/reviews?id=${id}`);
+    const { data } = await axios.get(`/api/v1/reviews?id=${id}&name=${name}`);
 
     dispatch({
       type: GET_REVIEWS_SUCCESS,

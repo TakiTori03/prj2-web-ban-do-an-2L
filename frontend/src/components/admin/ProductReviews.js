@@ -36,9 +36,9 @@ const ProductReviews = () => {
       dispatch(clearErrors());
     }
 
-    if (productId !== "") {
-      dispatch(getProductReviews(productId));
-    }
+    // if (productId !== "") {
+    //   dispatch(getProductReviews(productId));
+    // }
 
     if (isDeleted) {
       alert.success("Review deleted successfully");
@@ -52,7 +52,7 @@ const ProductReviews = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    dispatch(getProductReviews(productId));
+    dispatch(getProductReviews(productId, productName));
   };
 
   const setReviews = () => {
@@ -86,7 +86,7 @@ const ProductReviews = () => {
       rows: [],
     };
 
-    reviews.forEach((review) => {
+    reviews?.forEach((review) => {
       data.rows.push({
         id: review._id,
         rating: review.rating,
@@ -141,7 +141,6 @@ const ProductReviews = () => {
                       className="form-control"
                       value={productName}
                       onChange={(e) => setProductName(e.target.value)}
-                      disabled
                     />
                   </div>
 

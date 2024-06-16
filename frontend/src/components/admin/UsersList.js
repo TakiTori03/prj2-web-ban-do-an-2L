@@ -91,7 +91,7 @@ const UsersList = ({ history }) => {
       rows: [],
     };
 
-    users.forEach((user) => {
+    users?.forEach((user) => {
       data.rows.push({
         id: user._id,
         name: user.name,
