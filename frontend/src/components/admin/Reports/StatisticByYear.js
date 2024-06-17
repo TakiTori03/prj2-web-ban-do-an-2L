@@ -53,7 +53,7 @@ const LineChart = (props) => {
             const { data } = await axios.post("http://localhost:4000/api/v1/admin/report-revenue", props);
 
 
-            if (data.monthRevenue != []) {
+            if (data.monthRevenue) {
                 const array = new Array(12).fill(0);
                 for (let i = 0; i < data.monthRevenue.length; i = i + 1) {
                     array[data.monthRevenue[i].month - 1] = data.monthRevenue[i].totalRevenue;
@@ -82,7 +82,7 @@ const LineChart = (props) => {
             }
             setChartData(chartData);
         }
-    }, [amountPerMonth])
+    }, [amountPerMonth, props.year])
 
 
     return (

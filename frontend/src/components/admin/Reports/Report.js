@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react';
-import LineChart from './LineChart';
-import PieChart from './PieChart';
+import LineChart from './StatisticByYear';
+import PieChart from './StatisticByMonth';
 
 import MetaData from '../../layout/MetaData';
 import Sidebar from '../Sidebar';
@@ -38,7 +38,7 @@ const Report = () => {
             try {
 
                 const { data } = await axios.get("http://localhost:4000/api/v1/admin/report-total");
-                console.log(data);
+
                 if (data) {
                     setTotalRevenue(data.totalRevenue);
                     setTotalProductsSold(data.totalProductsSold)

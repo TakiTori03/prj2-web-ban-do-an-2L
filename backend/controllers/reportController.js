@@ -12,6 +12,7 @@ exports.getRevenueByMonth = catchAsyncErrors(async (req, res, next) => {
     const monthRevenue = await Order.aggregate([
         {
             $match: {
+                orderStatus: 'Delivered',
                 createdAt: {
                     $gte: startDate,
                     $lte: endDate
@@ -44,27 +45,44 @@ exports.getRevenueByMonth = catchAsyncErrors(async (req, res, next) => {
 });
 
 exports.getQuantityPerMonth = catchAsyncErrors(async (req, res, next) => {
+    let { year } = req.body;
+
+    let startDate = new Date(`${year}-01-01T00:00:00.000Z`);
+    let endDate = new Date(`${year}-12-31T23:59:59.999Z`);
+
     const quantityPerMonth = await Order.aggregate([
         {
-            $match: { orderStatus: 'Delivered' } // Lọc chỉ đơn hàng đã giao hàng
+            $match: {
+                orderStatus: 'Delivered',
+                createdAt: {
+                    $gte: startDate,
+                    $lte: endDate
+                }
+            }// Lọc chỉ đơn hàng đã giao hàng
         },
         {
             $unwind: '$orderItems' // Tách mảng orderItems thành các bản ghi riêng lẻ
         },
         {
             $group: {
-                _id: { $month: '$createdAt' }, // Nhóm theo tháng
+                _id: {
+                    month: { $month: '$createdAt' }
+                }, // Nhóm theo tháng
                 totalQuantity: { $sum: '$orderItems.quantity' } // Tính tổng số lượng sản phẩm
             }
         },
         {
-            $sort: { _id: 1 } // Sắp xếp theo tháng tăng dần
+            $sort: { "_id.month": 1 } // Sắp xếp theo tháng tăng dần
+        },
+        {
+            $project: {
+                month: "$_id.month",
+                totalQuanlity: 1,
+                _id: 0
+            }
         }
     ])
-    // const quantityByMonth = Array.from({ length: 12 }, (_, i) => {
-    //     const matchingObject = quantityPerMonth.find(obj => obj._id === i + 1);
-    //     return matchingObject ? matchingObject.totalQuantity : 0;
-    // });
+
 
 
     res.status(200).json({
