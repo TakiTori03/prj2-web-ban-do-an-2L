@@ -36,6 +36,10 @@ const Sidebar = () => {
                         <Link to="/admin/reviews"><i className="fa fa-star"></i> Reviews</Link>
                     </li>
 
+                    <li>
+                        <Link to="/admin/reports"><i class="fa fa-area-chart" aria-hidden="true"></i> Reports</Link>
+                    </li>
+
                 </ul>
             </nav>
         </div>

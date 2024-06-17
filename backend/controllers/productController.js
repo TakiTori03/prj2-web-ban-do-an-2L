@@ -222,6 +222,15 @@ exports.getProductReviews = catchAsyncErrors(async (req, res, next) => {
     })
 })
 
+// Get Product Reviews   =>   /api/v1/allreviews
+exports.getAllProductReviews = catchAsyncErrors(async (req, res, next) => {
+    const product = await Product.find();
+
+    res.status(200).json({
+        success: true,
+        reviews: product.reviews
+    })
+})
 // Delete Product Reviews   =>   /api/v1/reviews
 exports.deleteReview = catchAsyncErrors(async (req, res, next) => {
 

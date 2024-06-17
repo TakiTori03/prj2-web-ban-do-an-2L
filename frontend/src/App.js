@@ -37,7 +37,7 @@ import ProcessOrder from './components/admin/ProcessOrder'
 import UsersList from './components/admin/UsersList'
 import UpdateUser from './components/admin/UpdateUser'
 import ProductReviews from './components/admin/ProductReviews'
-import IngredientsList from './components/admin/Ingredients'
+import Report from './components/admin/Report/Report'
 
 import ProtectedRoute from './components/route/ProtectedRoute'
 import { loadUser } from './actions/userActions'
@@ -48,6 +48,8 @@ import axios from 'axios'
 // Payment
 import { Elements } from '@stripe/react-stripe-js'
 import { loadStripe } from '@stripe/stripe-js'
+
+
 
 function App() {
 
@@ -108,7 +110,9 @@ function App() {
                 <Route path="/admin/users" isAdmin={true} component={UsersList} exact />
                 <Route path="/admin/user/:id" isAdmin={true} component={UpdateUser} exact />
                 <Route path="/admin/reviews" isAdmin={true} component={ProductReviews} exact />
-                <Route path="/admin/ingredients" isAdmin={true} component={IngredientsList} exact />
+                <Route path="/admin/reports" isAdmin={true} component={Report} exact />
+
+                {/* <Route path="/admin/ingredients" isAdmin={true} component={IngredientsList} exact /> */}
                 {!loading && (!isAuthenticated || user.role !== 'admin') && (
                     <Footer />
                 )}
