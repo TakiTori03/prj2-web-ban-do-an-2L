@@ -636,21 +636,3 @@ ul.CTAs a {
   list-style-type: none;
   text-align: center;
 }
-
-.rp-chart-container {
-  padding: 20px;
-  margin: 10px;
-  max-width: 1400px;
-}
-
-.rp-chart-container.row-1 {
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-  height: auto;
-
-  .chart-container {
-    max-width: 700px;
-    min-width: 700px;
-  }
-}

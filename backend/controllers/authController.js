@@ -5,8 +5,16 @@ const catchAsyncErrors = require('../middlewares/catchAsyncErrors');
 const sendToken = require('../utils/jwtToken');
 const sendEmail = require('../utils/sendEmail');
 
+const jwt = require('jsonwebtoken');
 const crypto = require('crypto');
 const cloudinary = require('cloudinary');
+
+// Define a function to create an activation token
+const createActivationToken = (user) => {
+    return jwt.sign(user, process.env.JWT_SECRET, {
+        expiresIn: process.env.JWT_EXPIRES_TIME
+    });
+};
 
 // Register a user   => /api/v1/register
 exports.registerUser = catchAsyncErrors(async (req, res, next) => {
@@ -17,11 +25,9 @@ exports.registerUser = catchAsyncErrors(async (req, res, next) => {
         crop: "scale"
     })
 
-
-
     const { name, email, password } = req.body;
 
-    const user = await User.create({
+    const user = {
         name,
         email,
         password,
@@ -29,10 +35,73 @@ exports.registerUser = catchAsyncErrors(async (req, res, next) => {
             public_id: result.public_id,
             url: result.secure_url
         }
-    })
+    }
+    const isExist = await User.findOne({ email });
 
-    sendToken(user, 200, res);
+    if (isExist) {
+        return next(new ErrorHandler("User already exists", 400));
+    }
+    const activationToken = createActivationToken(user)
+    // Construct the activation URL
+    const activationUrl = `http://localhost:3000/activation/${activationToken}`;
 
+    console.log(activationUrl)
+    try {
+        await sendEmail({
+            email: user.email,
+            subject: "Activate Your Account",
+            message: `Hello ${user.name}, please click on the link to activate your account: ${activationUrl}`,
+        });
+        res.status(201).json({
+            success: true,
+            message: `Please check your email: ${user.email} to activate your account`,
+        });
+    } catch (error) {
+        return next(new ErrorHandler(error.message, 500));
+    }
+    // const user = await User.create({
+    //     name,
+    //     email,
+    //     password,
+    //     avatar: {
+    //         public_id: result.public_id,
+    //         url: result.secure_url
+    //     }
+    // })
+
+    // sendToken(user, 200, res);
+
+})
+//active registration  = > adp/v1/activation
+exports.activeUser = catchAsyncErrors(async (req, res, next) => {
+    try {
+        const { activation_token } = req.body;
+
+        // Verify the activation token
+        const newUser = jwt.verify(
+            activation_token,
+            process.env.JWT_SECRET
+        );
+        console.log(newUser);
+
+        if (!newUser) {
+            return next(new ErrorHandler("Invalid token", 400));
+        }
+        const { name, email, password, avatar } = newUser;
+
+
+        const user = await User.create({
+            name,
+            email,
+            password,
+            avatar,
+        });
+
+        // Send the JWT token as a response
+        sendToken(user, 201, res);
+    } catch (error) {
+        return next(new ErrorHandler(error.message, 500));
+    }
 })
 
 // Login User  =>  /api/v1/login

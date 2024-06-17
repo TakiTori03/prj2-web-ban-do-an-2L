@@ -1,42 +1,45 @@
 const Order = require('../models/order');
 const catchAsyncErrors = require('../middlewares/catchAsyncErrors');
 
-
-
-
 exports.getRevenueByMonth = catchAsyncErrors(async (req, res, next) => {
-    const { year } = req.body;
+    let { year } = req.body;
 
-    const amountPerMonth = await Order.aggregate([
+    let startDate = new Date(`${year}-01-01T00:00:00.000Z`);
+    let endDate = new Date(`${year}-12-31T23:59:59.999Z`);
+
+
+
+    const monthRevenue = await Order.aggregate([
         {
             $match: {
-                orderStatus: 'Delivered',
                 createdAt: {
-                    $gte: new Date(`${year}-01-01T00:00:00Z`),
-                    $lt: new Date(`${year + 1}-01-01T00:00:00Z`)
+                    $gte: startDate,
+                    $lte: endDate
                 }
-            } // Lọc chỉ đơn hàng đã giao hàng
-        },
-        {
-            $group: {
-                _id: { $month: '$createdAt' }, // Nhóm theo tháng
-                totalRevenue: { $sum: '$totalPrice' } // Tính tổng doanh thu
             }
         },
         {
-            $sort: { _id: 1 } // Sắp xếp theo tháng tăng dần
+            $group: {
+                _id: { month: { $month: "$createdAt" } },
+                totalRevenue: { $sum: "$totalPrice" }
+            }
+        },
+        {
+            $sort: { "_id.month": 1 }
+        },
+        {
+            $project: {
+                month: "$_id.month",
+                totalRevenue: 1,
+                _id: 0
+            }
         }
     ]);
 
-    const revenueByMonth = Array.from({ length: 12 }, (_, i) => {
-        const matchingObject = amountPerMonth.find(obj => obj._id === i + 1);
-        return matchingObject ? matchingObject.totalRevenue : 0;
-    });
-
-
+    // console.log(revenueByMonth)
     res.status(200).json({
         success: true,
-        revenueByMonth
+        monthRevenue
     })
 });
 
@@ -58,15 +61,15 @@ exports.getQuantityPerMonth = catchAsyncErrors(async (req, res, next) => {
             $sort: { _id: 1 } // Sắp xếp theo tháng tăng dần
         }
     ])
-    const quantityByMonth = Array.from({ length: 12 }, (_, i) => {
-        const matchingObject = quantityPerMonth.find(obj => obj._id === i + 1);
-        return matchingObject ? matchingObject.totalQuantity : 0;
-    });
+    // const quantityByMonth = Array.from({ length: 12 }, (_, i) => {
+    //     const matchingObject = quantityPerMonth.find(obj => obj._id === i + 1);
+    //     return matchingObject ? matchingObject.totalQuantity : 0;
+    // });
 
 
     res.status(200).json({
         success: true,
-        quantityByMonth
+        quantityPerMonth
     })
 });
 
@@ -123,5 +126,29 @@ exports.getCategoryByMonth = catchAsyncErrors(async (req, res, next) => {
         success: true,
         salesStats
     })
-
 });
+
+exports.getCalculateTotals = catchAsyncErrors(async (req, res, next) => {
+    const total = await Order.aggregate([
+        { $match: { orderStatus: 'Delivered' } },
+        {
+            $unwind: '$orderItems' // Tách mảng orderItems thành các bản ghi riêng lẻ
+        },
+        {
+            $group: {
+                _id: null,
+                totalRevenue: { $sum: '$totalPrice' },
+                totalProductsSold: { $sum: '$orderItems.quantity' }
+            }
+        }
+    ]);
+
+    if (total.length > 0) {
+        const { totalRevenue, totalProductsSold } = total[0];
+        res.status(200).json({
+            success: true,
+            totalRevenue,
+            totalProductsSold
+        })
+    }
+})

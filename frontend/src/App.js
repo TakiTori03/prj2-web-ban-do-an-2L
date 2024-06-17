@@ -26,6 +26,7 @@ import UpdateProfile from './components/user/UpdateProfile'
 import UpdatePassword from './components/user/UpdatePassword'
 import ForgotPassword from './components/user/ForgotPassword'
 import NewPassword from './components/user/NewPassword'
+import ActivationPage from './components/user/ActivationPage'
 
 // Admin Imports
 import Dashboard from './components/admin/Dashboard'
@@ -69,7 +70,7 @@ function App() {
     }, [])
 
     const { user, isAuthenticated, loading } = useSelector(state => state.auth)
-
+    console.log(isAuthenticated)
     return (
         <Router>
             <div className="App">
@@ -91,6 +92,7 @@ function App() {
 
                     <Route path="/login" component={Login} />
                     <Route path="/register" component={Register} />
+                    <Route path='/activation/:activation_token*' component={ActivationPage} />
                     <Route path="/password/forgot" component={ForgotPassword} exact />
                     <Route path="/password/reset/:token" component={NewPassword} exact />
                     <Route path="/me" component={Profile} exact />

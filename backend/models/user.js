@@ -25,11 +25,11 @@ const userSchema = new mongoose.Schema({
     avatar: {
         public_id: {
             type: String
-            
+
         },
         url: {
             type: String
-            
+
         }
     },
     role: {
@@ -65,6 +65,7 @@ userSchema.methods.getJwtToken = function () {
         expiresIn: process.env.JWT_EXPIRES_TIME
     });
 }
+
 
 // Generate password reset token
 userSchema.methods.getResetPasswordToken = function () {

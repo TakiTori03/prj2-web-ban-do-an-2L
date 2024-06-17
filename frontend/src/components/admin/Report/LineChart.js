@@ -17,47 +17,22 @@ ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, T
 
 const LineChart = (props) => {
     const [amountPerMonth, setAmountPerMonth] = useState(null);
+    const [chartData, setChartData] = useState(null);
 
-    useEffect(() => {
-        const fetchData = async () => {
-            const labels = [
-                "Jan",
-                "Feb",
-                "Mar",
-                "Apr",
-                "May",
-                "Jun",
-                "Jul",
-                "Aug",
-                "Sep",
-                "Oct",
-                "Nov",
-                "Dec",
-            ];
-            const { data } = await axios.post("http://localhost:4000/api/v1/admin/report-revenue", props);
-
-
-            if (data) {
-
-                setAmountPerMonth({
-                    labels: labels,
-                    datasets: [
-                        {
-                            label: "Doanh thu năm " + props.year,
-                            data: data.revenueByMonth,
-
-                            borderColor: "red",
-                            backgroundColor: "red",
-                        },
-                    ],
-
-                });
-            } else {
-                toast.error("database is error");
-            }
-        };
-        fetchData();
-    }, [props]);
+    const labels = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+    ];
 
     const options = {
         responsive: true,
@@ -72,17 +47,52 @@ const LineChart = (props) => {
         },
     }
 
+    useEffect(() => {
+        const fetchData = async () => {
+
+            const { data } = await axios.post("http://localhost:4000/api/v1/admin/report-revenue", props);
+
+
+            if (data.monthRevenue != []) {
+                const array = new Array(12).fill(0);
+                for (let i = 0; i < data.monthRevenue.length; i = i + 1) {
+                    array[data.monthRevenue[i].month - 1] = data.monthRevenue[i].totalRevenue;
+                }
+
+                setAmountPerMonth(array);
+            } else {
+                toast.error("database is error");
+            }
+        };
+        fetchData();
+    }, [props]);
+
+    useEffect(() => {
+        if (amountPerMonth) {
+            const chartData = {
+                labels: labels,
+                datasets: [
+                    {
+                        label: "Doanh thu năm " + props.year,
+                        data: amountPerMonth,
+                        borderColor: "red",
+                        backgroundColor: "red",
+                    },
+                ],
+            }
+            setChartData(chartData);
+        }
+    }, [amountPerMonth])
+
 
     return (
         <>
-
-            {amountPerMonth && (
+            {amountPerMonth && chartData && (
                 <div className="chart-container">
                     <h2>Biểu đồ cho doanh thu </h2>
-                    <Line options={options} data={amountPerMonth} />
+                    <Line options={options} data={chartData} />
                 </div >
             )}
-
         </>
     );
 };

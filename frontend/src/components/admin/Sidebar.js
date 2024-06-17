@@ -37,7 +37,7 @@ const Sidebar = () => {
                     </li>
 
                     <li>
-                        <Link to="/admin/reports"><i class="fa fa-area-chart" aria-hidden="true"></i> Reports</Link>
+                        <Link to="/admin/reports"><i className="fa fa-area-chart" aria-hidden="true"></i> Reports</Link>
                     </li>
 
                 </ul>
