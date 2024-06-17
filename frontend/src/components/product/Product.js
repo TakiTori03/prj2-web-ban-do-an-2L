@@ -44,17 +44,8 @@ const Product = ({ product, col }) => {
           >
             View Details{" "}
           </Link>
-          {/* <i
-            className="bi bi-cart3"
-            style={{
-              marginLeft: "0.5rem",
-              display: "inline-block",
-              float: "right",
-            }}
-            onClick={addToCart}
-          ></i> */}
 
-          <button
+          {/* <button
             type="button"
             id="view_btn"
             className="btn btn-block"
@@ -62,7 +53,13 @@ const Product = ({ product, col }) => {
             onClick={addToCart}
           >
             Add to Cart
-          </button>
+          </button> */}
+          <i
+            className="fa-light fa-cart-shopping"
+            style={{ color: "#FFD43B" }}
+            disabled={product.stock === 0}
+            onClick={addToCart}
+          ></i>
         </div>
       </div>
     </div>

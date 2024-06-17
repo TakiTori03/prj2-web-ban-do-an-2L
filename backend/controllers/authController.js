@@ -8,6 +8,8 @@ const sendEmail = require("../utils/sendEmail");
 const crypto = require("crypto");
 const cloudinary = require("cloudinary");
 
+const { OAuth2Client } = require("google-auth-library");
+
 // Register a user   => /api/v1/register
 exports.registerUser = catchAsyncErrors(async (req, res, next) => {
   let result;
@@ -80,6 +82,38 @@ exports.loginUser = catchAsyncErrors(async (req, res, next) => {
   sendToken(user, 200, res);
 });
 
+//Login User => /api/v1/googlelogin
+
+exports.googleLogin = async (req, res, next) => {
+  const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
+  const { tokenId } = req.body;
+
+  const ticket = await client.verifyIdToken({
+    idToken: tokenId,
+    audience: process.env.GOOGLE_CLIENT_ID,
+  });
+
+  const { email_verified, name, email } = ticket.getPayload();
+
+  if (email_verified) {
+    let user = await User.findOne({ email });
+
+    if (!user) {
+      user = await User.create({
+        name,
+        email,
+        password: email + process.env.JWT_SECRET, // Just a placeholder password
+      });
+    }
+
+    sendToken(user, 200, res);
+  } else {
+    res.status(400).json({
+      success: false,
+      message: "Google login failed. Try again later.",
+    });
+  }
+};
 // Forgot Password   =>  /api/v1/password/forgot
 exports.forgotPassword = catchAsyncErrors(async (req, res, next) => {
   const user = await User.findOne({ email: req.body.email });
