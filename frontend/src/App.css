@@ -530,7 +530,7 @@ footer {
   background: #fff;
 }
 
-#sidebar ul li a:active {
+#sidebar ul li.active a {
   color: #232f3e;
   background: #fff;
 }
@@ -669,4 +669,32 @@ ul.CTAs a {
   display: flex; /* Enable flexbox layout */
   align-items: center; /* Align elements vertically */
   position: relative;
+}
+
+.report-count-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+  margin-bottom: 16px;
+}
+
+.rp-element-count {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rp-element-count span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.radio-label {
+  padding-left: 10px;
+}
+
+.picker-label {
+  margin-right: 10px;
 }

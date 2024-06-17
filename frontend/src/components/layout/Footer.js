@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
         <div className="bg-dark text-center py-3">
           <p className="mb-0">
-            &copy; {new Date().getFullYear()} Your Company. All Rights Reserved.
+            &copy; {new Date().getFullYear()} DoubleLinh. All Rights Reserved.
           </p>
         </div>
       </footer>

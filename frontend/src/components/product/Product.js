@@ -36,16 +36,17 @@ const Product = ({ product, col }) => {
             <span id="no_of_reviews">({product.numOfReviews} Reviews)</span>
           </div>
           <p className="card-text">${product.price}</p>
-          <Link
-            to={`/product/${product._id}`}
-            id="view_btn"
-            className="btn btn-block"
-            style={{ display: "inline-block" }}
-          >
-            View Details{" "}
-          </Link>
+          <div>
+            <Link
+              to={`/product/${product._id}`}
+              id="view_btn"
+              className="btn btn-block"
+              style={{ display: "inline-block" }}
+            >
+              View Details{" "}
+            </Link>
 
-          {/* <button
+            {/* <button
             type="button"
             id="view_btn"
             className="btn btn-block"
@@ -54,12 +55,13 @@ const Product = ({ product, col }) => {
           >
             Add to Cart
           </button> */}
-          <i
-            className="fa-light fa-cart-shopping"
-            style={{ color: "#FFD43B" }}
-            disabled={product.stock === 0}
-            onClick={addToCart}
-          ></i>
+            <i
+              className="fa-light fa-cart-shopping"
+              style={{ color: "#FFD43B" }}
+              disabled={product.stock === 0}
+              onClick={addToCart}
+            ></i>
+          </div>
         </div>
       </div>
     </div>
