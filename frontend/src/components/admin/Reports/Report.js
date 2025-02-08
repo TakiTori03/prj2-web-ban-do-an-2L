@@ -5,7 +5,7 @@ import PieChart from "./StatisticByMonth";
 import MetaData from "../../layout/MetaData";
 import Sidebar from "../Sidebar";
 
-import axios from "axios";
+import axios from "../../../config/axiosConfig";
 import { toast } from "react-toastify";
 
 const months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
@@ -34,9 +34,7 @@ const Report = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const { data } = await axios.get(
-          "http://localhost:4000/api/v1/admin/report-total"
-        );
+        const { data } = await axios.get("/api/v1/admin/report-total");
 
         if (data) {
           setTotalRevenue(data.totalRevenue);
