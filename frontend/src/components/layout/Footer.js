@@ -12,11 +12,11 @@ const Footer = () => {
                 <tbody>
                   <tr>
                     <td className="text-right font-weight-bold">Email:</td>
-                    <td className="text-left">tothailinhytbg2003@gmail.com</td>
+                    <td className="text-left">linhnv5413@gmail.com</td>
                   </tr>
                   <tr>
                     <td className="text-right font-weight-bold">Phone:</td>
-                    <td className="text-left">(+89) 0329804532</td>
+                    <td className="text-left">(+84) </td>
                   </tr>
                 </tbody>
               </table>

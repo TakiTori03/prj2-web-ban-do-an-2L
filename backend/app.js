@@ -19,7 +19,12 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(fileUpload());
-app.use(cors());
+app.use(
+  cors({
+    origin: "http://localhost:3000", // Thay bằng domain frontend của bạn
+    credentials: true, // Cho phép gửi cookie
+  })
+);
 
 // Import all routes
 const products = require("./routes/product");
