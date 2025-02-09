@@ -21,7 +21,7 @@ app.use(cookieParser());
 app.use(fileUpload());
 app.use(
   cors({
-    origin: "http://localhost:3000", // Thay bằng domain frontend của bạn
+    origin: process.env.FRONTEND_URL, // Thay bằng domain frontend của bạn
     credentials: true, // Cho phép gửi cookie
   })
 );
